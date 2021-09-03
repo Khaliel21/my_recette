@@ -1,0 +1,183 @@
+
+    <!DOCTYPE html>
+    <html lang="fr">
+
+        <head>
+            
+            <title> Mon gateau fondant au Chocolat </title>
+            <meta charset="UTF-8">
+            <link rel="stylesheet" href="recette.css"/>
+
+            <!--- pour changer la couleur de toute la pages on ouvre une section style dans la section <head>
+                et une sous section body {
+
+                    ici on peux changer touts les parametre pour tout les element qui ce trouve dans le body de la page
+                }
+                ---->
+
+            <!--- il y egalement une fonction display il y a trois facon principal a utiliser avec display
+
+                
+                display block = contours l element dans un block
+                display ligne = prend en compte la ligne
+                display ligne block = prendre en compte l element par rapport au block et a la ligne 
+             --->    
+
+           
+
+             <!--- dans div.nom de groupe {
+
+                je peux dans toute les fonction que je veux en particulier les il a une fonction pour calculer des marge en %
+                par rapport a la feuilles c est a dire si je regarde la fonction margin
+
+                margin hpx,dpx,bpx,gpx
+
+                h = marge de haut
+                d marge a droit 
+                b = marge en bas
+                g = marge gauche 
+             }
+            ---->
+
+            <!--- 
+                on peux identifier certais objet du code en donner des identier a chaque element que je veux leur donner 
+                a chaque element que je veux affilier a un groupe je fais <type de balise  id="nom deu groupe">
+                et pour appliquer une fonction a ce groupe dans la partie style je crees un bloque 
+                #"nom du groupe"{
+
+                    et ici je change tout ce que je veux changer 
+                }
+
+                mais dans 99% de cas on utilise la class c est a dire <type de balise class = "nom du groupe"
+            ---->
+        
+        </head> 
+        
+         <!--- la fonction div ce place l interieure de la balise <body>
+             et la fin de div ce place avant la fin de </body>
+            ---->
+          
+        <body>
+
+           <div class="contenue">
+
+                <div class="categorie center">
+                    <p class="categorie"> Recette </p>
+                </div>
+
+                <h1 align="left">Recette du gateaux au Chocolat de ma grand mere </h1>
+
+                <div class="seperateur"></div>
+
+                <div class="centre">
+
+                <p class="description centre"> "recette tres simple est facile a preparer en 20 mininute vous faite plaisire a toute la famille"</p>
+
+                    </div>
+                <div class="info" > 
+
+                    <img class="centre info"  src="http://jonathanroux.com/gateau.jpg?di=9999"> 
+                    <!--- pour regrouper une image et une autre element on va les place 
+                        sous la meme div>
+                        si il y a un probleme d alignement entre la longeur de la div et l image je peux le rectifier en fesans du 
+                        CSS in ligne sur la balise image style display block
+                        on va aussi faire du CSS in ligne c est a dans directement dans la balise stryl dans la div 
+                        avec la fonction position 
+                        la fonction parentre sera avec l explicite position : relative
+                        et la fonction enfant sera avec position : absolute
+                        c est pour superposer la fonction enfant dans la fonction parent
+                        il ne faut pas oublier de le placer la fonction enfant dans l espace de la fonction parent 
+                        a l aide de top, botom left right 
+                        et width et une height(lageure hauteur) et donner egalement l opaciter de la couleur de font de la fonction enfant 
+                        tres ulisier C0 que l on place juste a la suite du code couleur #6c829dc0
+
+
+                    -->
+
+                    <table class="info" >
+
+                        <tr>
+                            <th> difficulter </th>
+                            <th> temps de prepartion </th>
+                            <th> nombre de personne </th>
+                            <th> cout tatal </th>
+
+                        </tr>
+
+                        <tr><td>facile</td><td>30 minuttes </td><td>4</td><td>6.7$</td></tr>
+
+                    </table>
+
+                </div>
+
+                <div>
+
+                        <div class="colonne1 colonne">
+
+                            <h2 align = "left"> liste des ingredient que vous avez besoin  </h2>
+
+                            <div class="list1">
+
+                                <p class="list1">chocolat noir 300 gram</p>
+                                <p class="list1">beurre moux 2500 gram</p>
+                                <p class="list1">une brique de lait</p>
+                                <p class="list1">farine T55 pour tout usage 300 gram</p>
+                                <p class="list1">oeux vrais biologique code 0 4 uniniter</p>
+
+                            </div>
+
+                        </div>
+
+                        <div class="colonne2 colonne">
+
+
+                            <h2 align = "left"> Etape de preparation: </h3>
+
+                            <table class="preparation">
+
+                            
+
+                                <tr><td><p class="numero">1</p></td><td class=" prepa_etape">faitte bouiller 3 litres d eau </td></tr>
+                                <tr><td><p class="numero">2</p></td><td class=" prepa_etape">par dessu le baim mari faitte fondre le chocolat avec le beurre</td></tr>
+                                <tr><td><p class="numero">3</p></td><td class=" prepa_etape">verrser dans un bol la farine et cree un puis</td></tr>
+                                <tr><td><p class="numero">4</p></td><td class=" prepa_etape">casser 3 oeux seperarer les jaunes des blancs </td></tr>
+                                <tr><td><p class="numero">5</p></td><td class=" prepa_etape">cree un puit dans la farine et metter les 3 jaunes et former une boule </td></tr>
+                                <tr><td><p class="numero">6</p></td><td class=" prepa_etape">verser le lait et former une patte hommogene </td></tr>
+                                <tr><td><p class="numero">7</p></td><td class=" prepa_etape">faitte fouetter les blancs pour le monter en niege </td></tr>
+                                <tr><td><p class="numero">8</p></td><td class=" prepa_etape">incorporer vos blancs en niege dans le chocolat </td></tr>
+                                <tr><td><p class="numero">9</p></td><td class=" prepa_etape">etaller votre patte et verser la prepartion chocolat </td></tr>
+                            
+                            
+                            </table>
+
+
+                        </div>
+
+                </div>
+
+                <!--- comment cree des tableaux en premier on commence toujours par cree les lignes
+                    tr = table row (ligne)
+
+                        th = table header (titre)
+                        td = table data (donnee)
+                ---->
+
+                
+
+
+                    <!--- comment selectioner une partie d un paragraph e ou une partie d un bloc
+                        il y a les fonction span et fonction div
+                        serre a changer le style de la section selection 
+
+                        span = (selection une partie d un paragraphe)
+                        div =  (selection un bloc entier peux aussi servire pour les tablaux)
+
+                    
+                ---->
+        
+            </div>  
+
+        </body>
+    
+
+    </html>

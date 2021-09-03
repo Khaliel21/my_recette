@@ -1,0 +1,222 @@
+
+*{
+
+    overflow: auto;
+}
+
+body{
+
+    background-color: #8ba1bb;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    margin: 0;
+    margin-top: 60px;
+    
+}
+
+p.categorie{
+
+    background-color:black;
+    color:white;
+    display: inline-block;
+    padding: 8px 15px 8px 15px;
+    margin-top: -15px;
+    margin-bottom: 0px;
+    font-weight: bold;
+    font-size: 16px;
+    
+    
+    }
+
+div.contenue{
+
+    /* si je veux empecher que mes tableaux deborde de l image l orsque je reduis la taille de la page wed
+    
+    je doit limiter la taille de toute le layout du contenue donc avec la fonction min-width 
+    je vais empecher le debordement de mes text cela n est pas neccesaire sur le image car a l aide d un centrage elle 
+    le font automatiqument*/
+    
+    background-color: white;
+    margin: 60px 10% 80px 10%;
+    padding: 0px 30px 30px 30px;
+    min-width: 350px;
+    box-shadow: 0px 0px 10px 10px rgba(0, 0, 0, 0.1);
+    overflow: visible;
+
+}
+
+h1{
+    text-align: center;
+    margin-bottom: 10px;
+    margin-top: 15px;
+}
+
+p.description{
+
+    text-align: center;
+    display: inline-block;
+    font-size: 15px;
+    font-weight: bold;
+    
+}
+
+/*  c est un commataire sur CSS   */
+
+.centre{
+text-align: center;
+width: 100%; /* toujours bien reflechire a cree une classe centre et a l utiliser pour centree les texte et le image
+
+             pour centre une image on va dans la ligne ou l image est encoder et on lui donne la class centre
+             ne pas oublier de demarer le bloque centre avec un point .centre */
+
+}
+
+div.categorie{
+    text-align: center;
+    margin-bottom: -18px;
+    overflow: visible;
+
+}
+
+
+
+div.seperateur{ 
+
+    width: 100px;
+    height: 1px;
+    background-color: black ;
+    margin-left: auto;
+    margin-right: auto; /* les deux deniere commende me permetre de centree la ligne par rapport a la feuille */
+    
+}
+
+div.info{
+
+    position: relative;
+    display: block;
+}
+
+table.info{
+    
+    position: absolute;
+    bottom: 0; 
+    width: 100%; 
+    color: white;
+    background-color: #6c829dc0;
+    height: 80px;
+    
+}
+
+table.info td{ 
+    
+    /* on va reutiliser la class info pour recentre tout les element qui se trouve a l interieure de la meme div 
+    et dans la meme table c est a dire tout les td dans cette table seront realigner au centre par rapport a la table
+    il existe aussi une possibiliter d aligner tout les td ou th par rapporte au th avec vertical align 
+    et il y a la possibiliter de separer les element avec padding */
+
+    text-align: center;
+    font-size: 14px;
+    vertical-align: top;
+    
+}
+
+table.info th{
+
+    font-size: 16px;
+    vertical-align: bottom;
+    padding-bottom: 8px;
+    
+   
+}
+
+img.info{
+
+    /* toujours quand on met des image il faut panser a 
+    mettre une taille minimal et maximal pour ne pas avoir trop de temps de chargement 
+    et donner une couleur de font en attendant que la page charge*/
+    display: block;
+    max-height: 400px;
+    min-height: 200px;
+    object-fit: cover;
+    background-color: lightgray; 
+}
+
+div.colonne{
+
+    /* loceque deux element partage les meme parametre on peux les regrouper les parametre en commun sur une div
+    en ecrivant chaque des div et une virgule*/
+    
+    width: 45%;
+    margin-top: 15px;
+}
+
+div.colonne h2{
+
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 14px;
+    border-bottom: 8px solid #6c829d;
+    padding-bottom: 5px;
+}
+
+div.colonne1{
+
+     /* si je veux partager mon encrans de sorte que les colonne soit a la meme distance alors je vais donner un
+     pourcentage enfonction du nombre de colonne que j ai ici j ai deux colonne 
+     alors chaque colonne va recevoir 50 %*/
+
+    
+   
+    display: inline-block;
+}
+
+div.colonne2{
+
+    float: right;
+}
+
+div.list1 p {
+
+    text-align: center;
+    border: 1px solid lightslategray;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    padding :  10px 0px;
+    margin-top: 8px;
+}
+
+table.preparation p.numero{
+
+    background-color:lightskyblue;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 4px;
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    box-sizing: border-box;
+    margin: 0;
+}
+
+table.preparation td{
+
+    vertical-align: top;
+}
+
+table.preparation tr{
+
+    height: 40px;
+}
+
+table.preparation td.prepa_etape{
+
+    padding-left: 10px;
+    padding-top: 4px;
+    font-size: 14px;
+    
+}
+
+
+
